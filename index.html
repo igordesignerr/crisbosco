@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prévia · Dra. Cris Bosco Estética Avançada</title>
+<meta name="description" content="Proposta de redesign (prévia não oficial): limpeza de pele Método Cris Bosco, peeling do Mar Morto e agendamento por WhatsApp. Nota 5,0 no Google.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="assets/monograma-cb.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scrollcraft.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BeautySalon","name":"Dra. Cris Bosco Estética Avançada","telephone":"+55 21 99296-8012","address":{"@type":"PostalAddress","streetAddress":"R. Soares Caldeira, 142, Salas 903/904, Centro Empresarial Madureira","addressLocality":"Rio de Janeiro","addressRegion":"RJ","postalCode":"21351-080","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-22.8707248,"longitude":-43.3399259},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"756","bestRating":"5"},"sameAs":["https://www.instagram.com/crisboscoesteticavancada","https://www.tiktok.com/@crisboscoesteticavancada"]}
+</script>
+<style>
+:root{
+  --sc-canvas:#F6F1EA; --sc-surface:#EDE4D8;
+  --sc-ink:#221C17; --sc-ink-soft:#62574C;
+  --sc-accent:#4CBCBE; --sc-accent-ink:#0D2627;
+  --sc-font-display:"Inter",system-ui,sans-serif;
+  --sc-font-text:"Inter",system-ui,sans-serif;
+  --gold:#C9A96A; --gold-deep:#8C6B33; --sand:#E7DCCD; --night:#18201F; --night-2:#222B2A;
+  --line:color-mix(in oklab,var(--sc-ink) 14%,transparent);
+  --wa:"https://wa.me/5521992968012";
+}
+body{font-family:var(--sc-font-text);color:var(--sc-ink)}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{text-wrap:balance;font-family:var(--sc-font-display);font-weight:500;letter-spacing:-0.04em;margin:0;line-height:1.02}
+h1 em,h2 em{font-style:normal}
+p{margin:0;text-wrap:pretty}
+a{color:inherit}
+
+/* ---------- aviso + barra ---------- */
+.notice{background:var(--night);color:#EDE6DA;font-size:12px;letter-spacing:.04em;text-align:center;padding:8px 16px;position:relative;z-index:60}
+.bar{position:sticky;top:0;z-index:50;height:0}
+.bar__in{position:absolute;top:14px;left:50%;translate:-50% 0;width:min(1180px,calc(100% - 28px));display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 10px 10px 20px;border-radius:999px;background:rgba(246,241,234,.5);backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);border:1px solid color-mix(in oklab,var(--sc-ink) 8%,transparent)}
+.bar__logo{height:40px;width:110px;display:block;--cb-mono:#B8954F;--cb-text:#2E9C9E}
+.foot__logo{height:34px;width:94px;--cb-mono:#C9A96A;--cb-text:#EDE6DA}
+.bar__nav{position:relative;display:flex;gap:4px;font-size:13px;font-weight:500}
+.bar__nav a{position:relative;z-index:1;padding:9px 14px;border-radius:99px;transition:color 200ms ease-out}
+.bar__nav a.is-on{color:var(--sc-ink)}
+.bar__in{transition:background 300ms ease-out,border-color 300ms ease-out}
+.bar.is-dark .bar__in{background:rgba(24,32,31,.45);border-color:rgba(241,235,225,.12)}
+.bar.is-dark .bar__nav a{color:#CFC7BA}
+.bar.is-dark .bar__nav a.is-on{color:var(--night)}
+.bar.is-dark .bar__logo{--cb-text:#EDE6DA;--cb-mono:#C9A96A}
+.bar.is-dark .pill{color:var(--gold);border-color:var(--gold)}
+.bar__ind{position:absolute;top:0;left:0;height:100%;width:0;border-radius:99px;background:rgba(255,255,255,.85);box-shadow:0 4px 14px -6px rgba(34,28,23,.25);opacity:0;transition:transform 420ms cubic-bezier(.2,.8,.2,1),width 420ms cubic-bezier(.2,.8,.2,1),opacity 240ms ease-out}
+.bar__nav a{text-decoration:none;color:var(--sc-ink-soft)}
+.bar__nav a:hover{color:var(--sc-ink)}
+.pill{font-size:10px;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--gold);color:var(--gold-deep);padding:3px 9px;border-radius:99px;margin-left:12px;font-weight:600}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;background:var(--sc-accent);color:var(--sc-accent-ink);font-weight:600;font-size:14px;letter-spacing:.02em;text-decoration:none;white-space:nowrap;transition:transform 140ms ease-out,filter 140ms ease-out}
+.cta:hover{filter:brightness(1.05)}
+.cta--line{background:transparent;color:var(--sc-ink);border:1px solid color-mix(in oklab,var(--sc-ink) 30%,transparent)}
+.cta svg{width:18px;height:18px}
+:focus-visible{outline:2px solid var(--gold-deep);outline-offset:3px;border-radius:6px}
+
+/* ---------- 1 · HERO em camadas ---------- */
+.hero{background:var(--sc-canvas)}
+.hero .stage{height:100svh;overflow:clip}
+.h-word{position:absolute;left:max(16px,calc((100vw - 1180px)/2));bottom:4svh;z-index:1;font-family:var(--sc-font-display);font-weight:600;font-size:clamp(80px,10.5vw,190px);line-height:.8;letter-spacing:-0.06em;color:var(--sand);white-space:nowrap;pointer-events:none;user-select:none}
+.h-cris{position:absolute;right:5vw;bottom:0;height:min(90svh,1000px);width:auto;z-index:2;transform-origin:50% 100%}
+.h-copy{position:absolute;left:max(24px,calc((100vw - 1180px)/2 + 20px));top:22svh;z-index:4;max-width:min(560px,44vw)}
+.h-copy h1{font-size:clamp(40px,4.6vw,76px);line-height:1}
+.h-copy h1 em{color:var(--gold-deep)}
+.h-copy p{margin-top:22px;max-width:40ch;color:var(--sc-ink-soft);font-size:16px;line-height:1.6}
+.h-copy .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.chip{position:absolute;z-index:3;display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:18px;background:color-mix(in oklab,#fff 82%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 18px 40px -18px rgba(34,28,23,.35);font-size:13px;line-height:1.3}
+.chip b{font-family:var(--sc-font-display);font-size:28px;font-weight:600;letter-spacing:-.04em;color:var(--gold-deep);line-height:1}
+.chip small{display:block;color:var(--sc-ink-soft);font-size:12px}
+.stars{color:var(--gold);letter-spacing:2px;font-size:13px}
+.chip--score{right:calc(5vw + min(52svh,560px));bottom:34svh}
+.chip--crbm{right:4vw;top:26svh}
+.chip--crbm i{width:8px;height:8px;border-radius:50%;background:var(--sc-accent);display:block}
+.h-units{white-space:nowrap;margin-top:26px !important;font-size:12px !important;letter-spacing:.18em;text-transform:uppercase;color:var(--sc-ink-soft)}
+@media (prefers-reduced-motion:no-preference){
+  .h-word{transform:translate3d(0,calc(var(--sc-p,0) * -16svh),0) scale(calc(1 + var(--sc-p,0) * .06))}
+  .h-cris{transform:translate3d(0,calc(var(--sc-p,0) * 3svh),0) scale(calc(1 + var(--sc-p,0) * .05))}
+  .chip--score{transform:translate3d(0,calc(var(--sc-p,0) * -34svh),0)}
+  .chip--crbm{transform:translate3d(0,calc(var(--sc-p,0) * -46svh),0)}
+}
+
+/* ---------- 2 · PROVA ---------- */
+.proof{padding:clamp(96px,14vh,160px) 0 clamp(80px,10vh,120px)}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.proof__grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px);align-items:start}
+.score-big{font-family:var(--sc-font-display);font-size:clamp(110px,13vw,200px);line-height:.8;color:var(--gold-deep);font-weight:500;letter-spacing:-.06em}
+.score-meta{margin-top:18px;display:flex;align-items:center;gap:14px;font-size:14px;color:var(--sc-ink-soft)}
+.score-meta .stars{font-size:18px}
+.proof h2{font-size:clamp(34px,3.6vw,52px);margin-top:36px;max-width:14ch}
+.quotes{display:grid;gap:16px}
+.q{background:#fff;border-radius:24px;padding:28px 30px;border:1px solid var(--line)}
+.q blockquote{margin:0;font-family:var(--sc-font-display);font-size:clamp(17px,1.35vw,20px);line-height:1.45;font-weight:400;letter-spacing:-.01em}
+.q cite{display:flex;justify-content:space-between;margin-top:18px;font-style:normal;font-size:13px;color:var(--sc-ink-soft)}
+.q--lead{padding:38px 40px}
+.q--lead blockquote{font-size:clamp(20px,1.8vw,27px);line-height:1.35;letter-spacing:-.02em}
+.q-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fine{font-size:12px;color:var(--sc-ink-soft);margin-top:18px;max-width:70ch}
+
+/* ---------- 3 · MÉTODO ---------- */
+.method{padding:clamp(80px,10vh,120px) 0}
+.method__grid{display:grid;grid-template-columns:6fr 6fr;gap:clamp(32px,6vw,88px);align-items:center}
+.method figure{margin:0;border-radius:28px;overflow:hidden;aspect-ratio:5/4;background:var(--sand)}
+.method figure img{width:100%;height:100%;object-fit:cover;object-position:58% 60%}
+.method figcaption{font-size:12px;color:var(--sc-ink-soft);margin-top:12px}
+.method h2{font-size:clamp(40px,4.2vw,64px)}
+.method h2 span{display:block;font-size:.42em;font-family:var(--sc-font-text);font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:18px}
+.method .lede{margin-top:20px;color:var(--sc-ink-soft);max-width:46ch;line-height:1.65}
+.steps{list-style:none;padding:0;margin:34px 0 0;border-top:1px solid var(--line)}
+.steps li{display:grid;grid-template-columns:64px 1fr;gap:8px;padding:18px 0;border-bottom:1px solid var(--line)}
+.steps li > span{font-family:var(--sc-font-display);font-size:22px;font-weight:500;color:var(--gold-deep);line-height:1}
+.steps b{display:block;font-weight:600;font-size:16px}
+.steps p{color:var(--sc-ink-soft);font-size:14px;margin-top:4px}
+.tag{display:inline-block;margin-top:18px;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);border:1px dashed var(--gold);padding:4px 10px;border-radius:99px}
+
+/* ---------- 4 · PICO: a pele limpa sob o scroll ---------- */
+.skin{background:var(--night);color:#F1EBE1}
+.skin .stage{height:100svh;overflow:clip;display:grid;place-items:center;
+  --k:clamp(0, calc((var(--sc-p,0) - 0.16) / 0.56), 1)}
+.skin__frame{position:relative;width:min(30vw,420px);aspect-ratio:400/416;border-radius:28px;overflow:hidden;box-shadow:0 40px 90px -40px rgba(0,0,0,.8);z-index:2}
+.skin__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.skin__after{clip-path:inset(0 0 0 calc((1 - var(--k)) * 100%))}
+.skin__div{position:absolute;top:0;bottom:0;width:2px;cursor:ew-resize;touch-action:none;background:var(--gold);left:calc((1 - var(--k)) * 100%);translate:-1px 0;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.skin__div i{position:absolute;top:50%;left:50%;width:46px;height:46px;translate:-50% -50%;border-radius:50%;border:2px solid var(--gold);background:var(--night);color:var(--gold);font-style:normal;font-size:15px;letter-spacing:2px;display:grid;place-items:center;transition:scale 160ms ease-out}
+.skin__div:hover i,.skin__div:focus-visible i,.is-drag .skin__div i{scale:1.12}
+.skin__frame{cursor:ew-resize;touch-action:pan-y;user-select:none}
+.skin__lbl{position:absolute;top:16px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:rgba(24,32,31,.7);color:#F1EBE1}
+.skin__lbl--a{left:16px}.skin__lbl--d{right:16px}
+.skin__h{position:absolute;left:max(24px,calc((100vw - 1180px)/2 + 20px));top:50%;translate:0 -50%;max-width:min(25vw,340px);z-index:3}
+.skin__h h2{font-size:clamp(36px,3.8vw,62px);line-height:1}
+.skin__h h2 em{color:var(--gold)}
+.skin__r{position:absolute;right:max(24px,calc((100vw - 1180px)/2 + 20px));top:50%;translate:0 -50%;max-width:min(24vw,320px);z-index:3}
+.skin__r p{color:#C9C1B4;line-height:1.65;font-size:15px}
+.skin__r .big{font-family:var(--sc-font-display);font-size:clamp(19px,1.6vw,24px);line-height:1.35;letter-spacing:-.02em;color:#F1EBE1;margin-bottom:16px}
+.skin__thumbs{display:flex;gap:10px;margin-top:22px}
+.skin__thumbs img{width:120px;height:78px;object-fit:cover;border-radius:12px;opacity:.9}
+.skin__fine{position:absolute;bottom:24px;left:50%;translate:-50% 0;width:min(90vw,720px);text-align:center;font-size:11px;color:#9E968A;z-index:3}
+@media (prefers-reduced-motion:reduce){ .skin .stage{--k:1} }
+
+/* ---------- 5 · PROCEDIMENTOS (trilho) ---------- */
+.procs{background:var(--sc-surface)}
+.procs .stage{height:100svh;overflow:clip;display:flex;align-items:center}
+.rail{gap:20px;padding-left:max(24px,calc((100vw - 1180px)/2 + 20px));padding-right:10vw;align-items:stretch}
+.rail__lead{flex:0 0 min(380px,78vw);display:flex;flex-direction:column;justify-content:center;padding-right:30px}
+.rail__lead h2{font-size:clamp(36px,3.6vw,56px)}
+.rail__lead p{margin-top:18px;color:var(--sc-ink-soft);max-width:34ch;line-height:1.6}
+.card{flex:0 0 clamp(270px,26vw,360px);height:min(62svh,500px);border-radius:28px;background:var(--sc-canvas);border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.card h3{font-size:clamp(24px,2vw,30px);max-width:11ch}
+.card p{color:var(--sc-ink-soft);font-size:14px;line-height:1.55;max-width:30ch}
+.card .n{font-family:var(--sc-font-display);font-size:56px;font-weight:500;letter-spacing:-.05em;color:var(--gold-deep);line-height:.9}
+.card .n small{display:block;font-family:var(--sc-font-text);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sc-ink-soft);margin-top:6px}
+.card--photo{padding:0;color:#fff;border:0}
+.card--photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card--photo .ov{position:relative;margin-top:auto;padding:28px;background:linear-gradient(to top,rgba(20,24,23,.82),rgba(20,24,23,0))}
+.card--photo p{color:#E8E1D6}
+.card--dark{background:var(--night);color:#F1EBE1;border:0}
+.card--dark p{color:#C9C1B4}
+.card--dark .n{color:var(--gold)}
+.card--mono{background:transparent;border:1px dashed color-mix(in oklab,var(--gold) 70%,transparent)}
+.card{transition:transform 320ms cubic-bezier(.2,.8,.2,1),box-shadow 320ms ease-out}
+.card::after{content:"";position:absolute;inset:-20% auto -20% 0;width:45%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-160%) skewX(-12deg);pointer-events:none}
+.card:hover{transform:translateY(-10px);box-shadow:0 30px 50px -28px rgba(34,28,23,.45)}
+.card:hover::after{transform:translateX(330%) skewX(-12deg);transition:transform 900ms cubic-bezier(.2,.8,.2,1)}
+.card:hover .arr{background:var(--sc-ink);color:#fff;opacity:1;rotate:-45deg}
+.c-laser{background:#D6ECEB;border-color:transparent}
+.c-striort{background:#EEDFC4;border-color:transparent}
+.c-botox{background:#F1DCD6;border-color:transparent}
+.c-cta{background:#22302F;border:0;color:#F1EBE1}
+.c-cta h3{color:#F1EBE1}
+.card--dark:hover::after,.c-cta:hover::after{background:linear-gradient(100deg,transparent,rgba(255,255,255,.14),transparent)}
+.card .arr{transition:background 220ms ease-out,color 220ms ease-out,rotate 320ms cubic-bezier(.2,.8,.2,1),opacity 220ms;position:absolute;top:24px;right:24px;width:40px;height:40px;border-radius:50%;border:1px solid currentColor;display:grid;place-items:center;opacity:.6;font-size:16px}
+
+/* ---------- 6 · SOBRE ---------- */
+.about{padding:clamp(96px,12vh,150px) 0}
+.about__grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,7vw,110px);align-items:center}
+.about figure{margin:0;border-radius:200px 200px 28px 28px;overflow:hidden;aspect-ratio:3/4;background:var(--sand)}
+.about figure img{width:100%;height:118%;object-fit:cover;object-position:50% 20%}
+.about h2{font-size:clamp(40px,4.6vw,72px)}
+.about .role{margin-top:18px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);font-weight:600}
+.about blockquote{margin:34px 0 0;font-family:var(--sc-font-display);font-size:clamp(22px,2vw,30px);line-height:1.3;letter-spacing:-.03em;font-weight:400;max-width:22ch}
+.about .facts{display:flex;gap:40px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.about .facts b{display:block;font-family:var(--sc-font-display);font-size:40px;font-weight:500;letter-spacing:-.05em;color:var(--gold-deep);line-height:1}
+.about .facts span{font-size:13px;color:var(--sc-ink-soft)}
+
+/* ---------- 7 · LINHA CB ---------- */
+.line{background:#E4EDEB}
+.line .stage{height:100svh;overflow:clip}
+.l-word{position:absolute;left:50%;top:54%;translate:-50% -50%;font-family:var(--sc-font-display);font-weight:600;font-size:clamp(140px,24vw,400px);line-height:.8;letter-spacing:-.07em;color:#CFE0DD;white-space:nowrap;z-index:0;user-select:none}
+.l-copy{position:absolute;left:max(24px,calc((100vw - 1180px)/2 + 20px));top:20svh;z-index:4;max-width:min(380px,29vw)}
+.l-copy h2{font-size:clamp(36px,3.6vw,56px)}
+.l-copy p{margin-top:16px;color:#4F5A58;line-height:1.6;max-width:36ch}
+.l-copy .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.l-shelf{position:absolute;left:37vw;top:50%;translate:0 -50%;width:min(58vw,1040px);border-radius:28px;overflow:hidden;z-index:2;box-shadow:0 40px 80px -40px rgba(20,40,40,.45)}
+.l-note{position:absolute;right:7vw;bottom:5svh;z-index:4;font-size:11px;letter-spacing:.08em;color:#4F5A58}
+@media (prefers-reduced-motion:no-preference){
+  .l-word{transform:translate3d(calc(var(--sc-p,0) * -12vw),0,0)}
+  .l-shelf{transform:translate3d(0,calc((0.5 - var(--sc-p,0)) * 10svh),0)}
+}
+
+/* ---------- 8 · UNIDADES + FAQ ---------- */
+.visit{padding:clamp(96px,12vh,150px) 0}
+.visit__grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px)}
+.visit h2{font-size:clamp(34px,3.4vw,52px)}
+.units{margin-top:30px;display:grid;gap:12px}
+.unit{border:1px solid var(--line);border-radius:22px;padding:22px 24px;background:#fff}
+.unit h3{font-size:22px}
+.unit p{font-size:14px;color:var(--sc-ink-soft);margin-top:6px;line-height:1.55}
+.unit .row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.mini{font-size:12px;font-weight:600;text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:8px 14px}
+.unit--todo{background:transparent;border-style:dashed}
+.faq details{border-bottom:1px solid var(--line);padding:22px 0}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:var(--sc-font-display);font-size:clamp(17px,1.4vw,20px);font-weight:500;letter-spacing:-.02em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sc-font-text);font-weight:400;color:var(--gold-deep);transition:transform 160ms ease-out}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin-top:12px;color:var(--sc-ink-soft);line-height:1.65;max-width:60ch;font-size:15px}
+.todo{color:var(--gold-deep);font-weight:600}
+
+/* ---------- 9 · FECHAMENTO ---------- */
+.close{background:var(--night);color:#F1EBE1}
+.close .stage{height:100svh;overflow:clip;display:flex;flex-direction:column}
+.close__in{flex:1;display:grid;place-items:center;text-align:center;padding:90px 24px 0}
+.close__mono{display:block;width:84px;height:auto;margin:0 auto 30px;--cb-mono:#C9A96A}
+.close h2{font-size:clamp(38px,4.8vw,80px);max-width:16ch;margin-inline:auto}
+.close h2 em{color:var(--gold)}
+.close .cta{margin-top:40px;min-height:58px;padding:0 34px;font-size:15px}
+.close .sub{margin-top:18px;font-size:13px;color:#A9A194}
+.foot{width:min(1180px,100% - 40px);margin:0 auto;padding:26px 0 30px;border-top:1px solid rgba(241,235,225,.14);display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;font-size:12px;color:#A9A194}
+.foot img{height:26px}
+.foot nav{display:flex;gap:20px;flex-wrap:wrap}
+.foot a{color:#E6DFD3;text-decoration:none}
+.foot a:hover{color:var(--gold)}
+
+.social{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:34px}
+.soc{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border-radius:99px;border:1px solid rgba(241,235,225,.22);color:#F1EBE1;text-decoration:none;font-size:13px;font-weight:500;transition:background 160ms ease-out,transform 160ms ease-out}
+.soc svg{width:18px;height:18px}
+.soc:hover{background:rgba(241,235,225,.08);transform:translateY(-2px)}
+.soc--tt{background:#F1EBE1;color:var(--night);border-color:transparent;padding:0 22px 0 16px;min-height:56px}
+.soc--tt:hover{background:#fff}
+.soc--tt svg{width:24px;height:24px}
+.soc--tt span{display:flex;flex-direction:column;align-items:flex-start;font-weight:600;font-size:14px;line-height:1.2}
+.soc--tt small{font-weight:400;font-size:11px;color:#5d5a55}
+/* ---------- botão fixo celular ---------- */
+.fab{display:none;transition:opacity 220ms ease-out,translate 220ms ease-out}
+.at-close .fab{opacity:0;translate:0 20px;pointer-events:none}
+
+/* ---------- celular ---------- */
+@media (max-width:760px){
+  .bar__nav{display:none}
+  .bar__in .cta{min-height:40px;padding:0 16px;font-size:13px}
+  .bar__logo{height:24px}
+  .pill{display:none}
+  .h-copy{top:13svh;left:20px;right:20px;max-width:none}
+  .h-copy h1{font-size:clamp(34px,9.4vw,46px)}
+  .h-copy p{font-size:15px;margin-top:14px}
+  .h-copy .row{display:none}
+  .h-word{font-size:21vw;bottom:30svh}
+  .h-cris{right:50%;translate:50% 0;height:52svh}
+  .chip--score{right:auto;left:16px;bottom:9svh;padding:10px 14px}
+  .chip--score b{font-size:28px}
+  .chip--crbm{display:none}
+  .proof__grid,.method__grid,.about__grid,.visit__grid{grid-template-columns:1fr}
+  .q-pair{grid-template-columns:1fr}
+  .q--lead{padding:28px 26px}
+  .method figure{aspect-ratio:4/3}
+  .skin .stage{display:block}
+  .skin__h{top:12svh;translate:none;left:20px;right:20px;max-width:none}
+  .skin__h h2{font-size:38px}
+  .skin__frame{position:absolute;left:50%;top:27svh;translate:-50% 0;width:min(78vw,360px)}
+  .skin__r{top:auto;bottom:24svh;translate:none;left:20px;right:20px;max-width:none}
+  .skin__r .big{font-size:18px;margin-bottom:0}
+  .skin__r p:not(.big),.skin__thumbs{display:none}
+  .skin__fine{bottom:84px;font-size:10px}
+  .card{height:min(58svh,460px)}
+  .about figure{aspect-ratio:4/5;max-height:70svh}
+  .about .facts{gap:28px}
+  .l-copy{top:12svh;left:20px;right:20px;max-width:none}
+  .l-copy .row{margin-top:18px}
+  .l-shelf{left:20px;right:20px;width:auto;bottom:12svh}
+  .l-word{top:62%}
+  .l-note{left:20px;right:auto;bottom:76px}
+  .close .stage{padding-bottom:0}
+  .foot{justify-content:flex-start}
+  .h-copy,.skin__h,.skin__r,.l-copy,.rail__lead,.method__grid > div:last-child > h2,.method .lede,.about__grid > div,.visit h2,.proof__grid > div:first-child{text-align:center}
+  .h-copy p,.method .lede{margin-inline:auto}
+  .h-copy .row,.l-copy .row,.score-meta,.about .facts{justify-content:center}
+  .proof h2,.about blockquote,.l-copy p{margin-inline:auto}
+  .rail__lead{align-items:center}
+  .rail__lead .tag{align-self:center !important}
+  .method .tag,.about .tag{display:table;margin-inline:auto}
+  .l-shelf{top:auto;translate:none}
+  .fab{display:block;position:fixed;left:14px;right:14px;bottom:14px;z-index:70}
+  .fab .cta{width:100%;min-height:54px;box-shadow:0 14px 30px -12px rgba(13,38,39,.55)}
+}
+</style>
+</head>
+<body>
+
+<div class="notice">Prévia de proposta de redesign · não é o site oficial da Dra. Cris Bosco · feita só com material público</div>
+
+<header class="bar">
+  <div class="bar__in">
+    <a href="#top" aria-label="Cris Bosco, início" style="display:flex;align-items:center"><svg class="bar__logo" viewBox="0 0 3018 1092" role="img" aria-label="Cris Bosco"><use href="assets/logo-cb.svg#logo"/></svg><span class="pill">Prévia</span></a>
+    <nav class="bar__nav" aria-label="Seções">
+      <span class="bar__ind" aria-hidden="true"></span><a href="#metodo">Método</a><a href="#resultados">Resultados</a><a href="#procedimentos">Procedimentos</a><a href="#sobre">Sobre</a><a href="#linha">Linha CB</a><a href="#unidades">Unidades</a>
+    </nav>
+    <a class="cta" href="https://wa.me/5521992968012?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1 · HERO: pin, camadas independentes -->
+  <section class="hero" data-sc-act="pin" data-sc-span="1.7" data-sc-drift="#F6F1EA">
+    <div data-sc-stage class="stage">
+      <div class="h-word" aria-hidden="true">Cris Bosco</div>
+      <img class="h-cris" src="assets/cris-hero.webp" width="900" height="1154" alt="Dra. Cris Bosco sorrindo, de blazer verde-água">
+      <div class="chip chip--score" aria-hidden="true"><b>5,0</b><span><span class="stars">★★★★★</span><small>756 avaliações no Google</small></span></div>
+      <div class="chip chip--crbm" aria-hidden="true"><i></i>Biomédica esteta · CRBM 10772</div>
+      <div class="h-copy" data-sc-cue="0 0.9 0">
+        <h1>Limpeza de pele com <em>método</em> e nome próprio.</h1>
+        <p>O Método Cris Bosco e o peeling do Mar Morto, com uma equipe que acompanha a sua pele por anos.</p>
+        <div class="row">
+          <a class="cta" href="https://wa.me/5521992968012?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+          <a class="cta cta--line" href="#metodo">Conhecer o método</a>
+        </div>
+        <p class="h-units">Madureira · Barra da Tijuca · Ipanema</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · PROVA: flow -->
+  <section class="proof" data-sc-act="flow" data-sc-drift="#F6F1EA" id="avaliacoes">
+    <div class="wrap proof__grid">
+      <div data-sc-in>
+        <div class="score-big">5,0</div>
+        <div class="score-meta"><span class="stars">★★★★★</span><span>756 avaliações no Google</span></div>
+        <h2>Quem vem, volta. E traz a irmã.</h2>
+      </div>
+      <div class="quotes" data-sc-in data-sc-stagger="90">
+        <figure class="q q--lead" style="margin:0"><blockquote>“Faço minha limpeza de pele lá desde 2018. Tenho a pele super sensível e não sofri com a limpeza profunda. Voltei e indiquei, agora minha irmã também é cliente.”</blockquote><cite><span>Anna Beatriz Rodrigues</span><span class="stars">★★★★★</span></cite></figure>
+        <div class="q-pair">
+          <figure class="q" style="margin:0"><blockquote>“Já fui em várias outras clínicas e não consigo o mesmo resultado. Minha pele fica mais lisa, viçosa e tratada.”</blockquote><cite><span>Laiany Luiza</span><span class="stars">★★★★★</span></cite></figure>
+          <figure class="q" style="margin:0"><blockquote>“Elas explicam tudo com muito carinho. Saí de lá me sentindo renovada!”</blockquote><cite><span>Brenda Freitas</span><span class="stars">★★★★★</span></cite></figure>
+        </div>
+        <p class="fine">Avaliações públicas do Google Maps, com trechos. O uso na versão final depende de autorização de cada pessoa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · MÉTODO: flow + reveal -->
+  <section class="method" data-sc-act="flow" data-sc-drift="#F3ECE3" id="metodo">
+    <div class="wrap method__grid">
+      <div>
+        <figure data-sc-reveal="up" data-sc-reveal-at="0.1 0.5"><img src="assets/procedimento.webp" width="869" height="382" alt="Profissionais da clínica realizando limpeza de pele em uma paciente"></figure>
+        <p class="method figcaption" style="padding:0;font-size:12px;color:var(--sc-ink-soft);margin-top:12px">Atendimento na clínica.</p>
+      </div>
+      <div data-sc-in>
+        <h2><span>Procedimento-assinatura</span>Método Cris Bosco</h2>
+        <p class="lede">A limpeza de pele mais citada pelas clientes: 216 menções nas avaliações do Google. Cada sessão começa por entender a sua pele.</p>
+        <ol class="steps">
+          <li><span>1</span><div><b>Avaliação da pele</b><p>Anamnese facial e análise do tipo de pele.</p></div></li>
+          <li><span>2</span><div><b>Preparo e extração</b><p>Higienização e extração conforme o que cada pele pede.</p></div></li>
+          <li><span>3</span><div><b>Tecnologias de apoio</b><p>Recursos como peeling de diamante, máscara térmica e LED, quando indicados.</p></div></li>
+          <li><span>4</span><div><b>Finalização</b><p>Calmante pós-extração e orientação de cuidados em casa.</p></div></li>
+        </ol>
+        <span class="tag">Etapas a confirmar com a Dra.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · PICO: pin, assinatura. A divisória anda com o scroll. -->
+  <section class="skin" data-sc-act="pin" data-sc-span="3" data-sc-drift="#18201F" id="resultados">
+    <div data-sc-stage class="stage">
+      <div class="skin__h" data-sc-cue="0.02">
+        <h2>Arraste e veja<br><em>a pele limpar.</em></h2>
+      </div>
+      <div class="skin__frame" id="comparador">
+        <img src="assets/pele1-antes.webp" width="400" height="416" alt="Antes: nariz com cravos e poros obstruídos">
+        <img class="skin__after" src="assets/pele1-depois.webp" width="400" height="416" alt="Depois: a mesma pele limpa após o procedimento">
+        <span class="skin__div" role="slider" tabindex="0" aria-label="Comparar antes e depois" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i aria-hidden="true">‹ ›</i></span>
+        <span class="skin__lbl skin__lbl--a">Antes</span><span class="skin__lbl skin__lbl--d">Depois</span>
+      </div>
+      <div class="skin__r" data-sc-cue="0.62">
+        <p class="big">Cravos e poros obstruídos dão lugar a uma pele limpa e uniforme.</p>
+        <p>É o que as clientes descrevem há anos nas avaliações: pele lisa, viçosa e tratada.</p>
+        <div class="skin__thumbs">
+          <img src="assets/resultado2.webp" width="800" height="520" alt="Antes e depois de limpeza de pele no nariz, publicado pela clínica">
+          <img src="assets/resultado3.webp" width="800" height="520" alt="Antes e depois de limpeza de pele na bochecha, publicado pela clínica">
+        </div>
+      </div>
+      <p class="skin__fine">Antes e depois publicados pela própria clínica. Resultados variam de pessoa para pessoa. Uso na versão final sujeito a confirmação de autorização.</p>
+    </div>
+  </section>
+
+  <!-- 5 · PROCEDIMENTOS: pan -->
+  <section class="procs" data-sc-act="pan" data-sc-span="2.4" data-sc-drift="#EDE4D8" id="procedimentos">
+    <div data-sc-stage class="stage">
+      <div class="rail" data-sc-pan="0.08">
+        <div class="rail__lead">
+          <h2>Cuidados que as clientes citam.</h2>
+          <p>Os procedimentos que mais aparecem nas avaliações públicas da clínica.</p>
+          <span class="tag" style="align-self:flex-start">Lista completa a confirmar</span>
+        </div>
+        <article class="card card--photo">
+          <img src="assets/cris-serum.webp" width="800" height="1067" alt="Dra. Cris Bosco segurando um frasco da linha CB">
+          <div class="ov"><h3>Limpeza de pele</h3><p style="margin-top:10px">Método Cris Bosco. 216 menções nas avaliações.</p></div>
+        </article>
+        <article class="card card--dark">
+          <div class="n">115<small>menções nas avaliações</small></div>
+          <div><h3>Peeling do Mar Morto</h3><p style="margin-top:12px">Tratamento próprio da clínica, indicado após avaliação.</p></div>
+        </article>
+        <article class="card c-laser">
+          <span class="arr" aria-hidden="true">→</span>
+          <h3>Depilação a laser</h3>
+          <p>“Faço depilação laser e limpeza de pele todos os meses.” Trecho de avaliação pública.</p>
+        </article>
+        <article class="card c-striort">
+          <span class="arr" aria-hidden="true">→</span>
+          <h3>Striort</h3>
+          <p>Tratamento para o abdômen, citado em avaliação recente.</p>
+        </article>
+        <article class="card c-botox">
+          <span class="arr" aria-hidden="true">→</span>
+          <h3>Botox</h3>
+          <p>“Tinha medo de ficar com o rosto artificial, mas adorei o resultado.” Trecho de avaliação pública.</p>
+        </article>
+        <article class="card card--mono c-cta">
+          <h3>Não sabe por onde começar?</h3>
+          <a class="cta" href="https://wa.me/5521992968012?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" style="align-self:flex-start">Agendar avaliação</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · SOBRE: flow + parallax -->
+  <section class="about" data-sc-act="flow" data-sc-drift="#F6F1EA" id="sobre">
+    <div class="wrap about__grid">
+      <figure><img data-sc-parallax="-0.08" src="assets/cris-sobre.webp" width="900" height="1200" alt="Dra. Cris Bosco de blazer branco, sorrindo"></figure>
+      <div data-sc-in>
+        <h2>Dra. Cris Bosco</h2>
+        <p class="role">Biomédica esteta · CRBM 10772</p>
+        <blockquote>“Referência em tratamentos faciais.”</blockquote>
+        <p style="margin-top:12px;font-size:13px;color:var(--sc-ink-soft)">Como ela se apresenta no Instagram.</p>
+        <div class="facts">
+          <div><b>+18 mil</b><span>peles atendidas, segundo o perfil dela</span></div>
+          <div><b>3</b><span>unidades no Rio</span></div>
+        </div>
+        <span class="tag">Formação e números a confirmar antes de publicar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · LINHA CB: pin, camadas -->
+  <section class="line" data-sc-act="pin" data-sc-span="1.6" data-sc-drift="#E4EDEB" id="linha">
+    <div data-sc-stage class="stage">
+      <div class="l-word" aria-hidden="true">clean</div>
+      <figure class="l-shelf" style="margin:0"><img src="assets/linha-cb.webp" width="1800" height="1005" alt="Produtos da linha CB Clean e CB Clear lado a lado"></figure>
+      <div class="l-copy" data-sc-cue="0.05">
+        <h2>A pele continua em casa.</h2>
+        <p>Linha CB de dermocosméticos, profissional e home care, criada pela Dra. Cris Bosco.</p>
+        <div class="row">
+          <a class="cta cta--line" href="http://crisboscodermocosmeticos.com.br/" target="_blank" rel="noopener">Conheça a linha</a>
+          <a class="cta cta--line" href="https://curso.crisbosco.com.br/" target="_blank" rel="noopener">Cursos e consultorias</a>
+        </div>
+      </div>
+      <p class="l-note">Imagens ilustrativas dos produtos.</p>
+    </div>
+  </section>
+
+  <!-- 8 · UNIDADES + FAQ: flow -->
+  <section class="visit" data-sc-act="flow" data-sc-drift="#F6F1EA" id="unidades">
+    <div class="wrap visit__grid">
+      <div data-sc-in>
+        <h2>Três endereços no Rio.</h2>
+        <div class="units">
+          <div class="unit">
+            <h3>Madureira</h3>
+            <p>Centro Empresarial Madureira. R. Soares Caldeira, 142, salas 903/904. Prédio com estacionamento. Aberta até 20h; <span class="todo">horário completo a confirmar</span>.</p>
+            <div class="row">
+              <a class="mini" href="https://www.google.com/maps/place/Dra.+Cris+Bosco+Est%C3%A9tica+Avan%C3%A7ada/@-22.8707248,-43.3399259,17z" target="_blank" rel="noopener">Google Maps</a>
+              <a class="mini" href="https://ul.waze.com/ul?place=ChIJ_1NO9idjmQARHWKY188uC30&ll=-22.87066390%2C-43.33991400&navigate=yes" target="_blank" rel="noopener">Waze</a>
+            </div>
+          </div>
+          <div class="unit unit--todo"><h3>Barra da Tijuca</h3><p class="todo">Endereço e horário a confirmar.</p></div>
+          <div class="unit unit--todo"><h3>Ipanema</h3><p class="todo">Endereço e horário a confirmar.</p></div>
+        </div>
+      </div>
+      <div class="faq" data-sc-in>
+        <h2 style="margin-bottom:28px">Antes de agendar.</h2>
+        <details><summary>Como eu agendo?</summary><p>Pelo botão “Agendar avaliação”. Ele abre o WhatsApp da clínica, e a equipe combina com você o dia e a unidade.</p></details>
+        <details><summary>Tenho pele sensível. Posso fazer a limpeza?</summary><p>Toda indicação começa pela avaliação da pele, e o cuidado é adaptado a cada caso. Quem decide o que é indicado é a profissional, na avaliação.</p></details>
+        <details><summary>Dói?</summary><p><span class="todo">Resposta a confirmar com a Dra.</span> A sensação varia de pessoa para pessoa e de procedimento para procedimento.</p></details>
+        <details><summary>Quanto dura e com que frequência devo fazer?</summary><p><span class="todo">Duração e frequência a confirmar com a Dra.</span> A frequência ideal é definida na avaliação.</p></details>
+        <details><summary>Existem contraindicações?</summary><p>Sim, dependem do procedimento e do histórico de cada pessoa, por isso a avaliação vem antes. <span class="todo">Lista oficial a confirmar.</span></p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · FECHAMENTO: pin curto, último elemento -->
+  <section class="close" data-sc-act="pin" data-sc-span="1.1" data-sc-drift="#18201F">
+    <div data-sc-stage class="stage">
+      <div class="close__in">
+        <div>
+          <svg class="close__mono" viewBox="0 0 835 796" aria-hidden="true" data-sc-cue="0.02"><use href="assets/logo-cb.svg#mono"/></svg>
+          <h2 data-sc-cue="0.04" data-sc-kinetic="lines">Sua próxima limpeza começa com <em>uma mensagem.</em></h2>
+          <a class="cta" href="https://wa.me/5521992968012?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" data-sc-magnet="0.22" data-sc-cue="0.04" data-sc-rise="0">Agendar avaliação</a>
+          <p class="sub" data-sc-cue="0.06">WhatsApp (21) 99296-8012 · Madureira, Barra da Tijuca e Ipanema</p>
+          <div class="social" data-sc-cue="0.08">
+            <a class="soc soc--tt" href="https://www.tiktok.com/@crisboscoesteticavancada" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 2h-3.3v13.1a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V8.9a6.2 6.2 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.5 4.5 0 0 1-4.4-4.7z"/></svg><span>Siga no TikTok<small>@crisboscoesteticavancada</small></span></a>
+            <a class="soc" href="https://www.instagram.com/crisboscoesteticavancada" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>Instagram</a>
+            <a class="soc" href="https://www.youtube.com/channel/UCDsm104i75O1-mmtcQ799Iw" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>YouTube</a>
+          </div>
+        </div>
+      </div>
+      <footer class="foot">
+<svg class="foot__logo" viewBox="0 0 3018 1092" role="img" aria-label="Cris Bosco"><use href="assets/logo-cb.svg#logo"/></svg>
+        <nav aria-label="Redes">
+          <a href="http://crisboscodermocosmeticos.com.br/" target="_blank" rel="noopener">Loja CB</a>
+          <a href="https://curso.crisbosco.com.br/" target="_blank" rel="noopener">Cursos</a>
+        </nav>
+        <p>Prévia de redesign feita por Igor Alves com material público. Não é o site oficial. Marca, fotos e avaliações pertencem aos titulares.</p>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<div class="fab"><a class="cta" href="https://wa.me/5521992968012?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a></div>
+
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script>
+/* Assinatura: o antes/depois responde ao scroll E ao arraste.
+   Quem rola vê a pele limpar; quem arrasta compara no próprio ritmo.
+   Rolar de novo devolve o controle ao scroll. */
+(function(){
+  var sec=document.getElementById('resultados'), frame=document.getElementById('comparador');
+  if(!sec||!frame) return;
+  var stage=sec.querySelector('.stage'), handle=frame.querySelector('.skin__div');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var manual=null, lastP=-1, drag=false;
+  function clamp(v){return Math.max(0,Math.min(1,v));}
+  function set(k){stage.style.setProperty('--k',k.toFixed(4));handle.setAttribute('aria-valuenow',Math.round(k*100));}
+  function fromX(x){var r=frame.getBoundingClientRect();return clamp(1-(x-r.left)/r.width);}
+  function tick(){
+    var p=parseFloat(getComputedStyle(sec).getPropertyValue('--sc-p'))||0;
+    if(Math.abs(p-lastP)>0.003 && !drag && lastP>=0) manual=null;
+    lastP=p;
+    set(manual!=null?manual:(reduce?1:clamp((p-0.16)/0.56)));
+    requestAnimationFrame(tick);
+  }
+  frame.addEventListener('pointerdown',function(e){drag=true;frame.classList.add('is-drag');frame.setPointerCapture&&frame.setPointerCapture(e.pointerId);manual=fromX(e.clientX);});
+  frame.addEventListener('pointermove',function(e){if(drag)manual=fromX(e.clientX);});
+  ['pointerup','pointercancel'].forEach(function(t){frame.addEventListener(t,function(){drag=false;frame.classList.remove('is-drag');});});
+  handle.addEventListener('keydown',function(e){
+    var k=manual!=null?manual:parseFloat(stage.style.getPropertyValue('--k'))||0;
+    if(e.key==='ArrowLeft'){manual=clamp(k+0.05);e.preventDefault();}
+    if(e.key==='ArrowRight'){manual=clamp(k-0.05);e.preventDefault();}
+  });
+  requestAnimationFrame(tick);
+})();
+
+/* Barra: pílula que desliza até a seção em que a pessoa está. */
+(function(){
+  var nav=document.querySelector('.bar__nav'); if(!nav) return;
+  var ind=nav.querySelector('.bar__ind'), links=[].slice.call(nav.querySelectorAll('a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  var cur=-1;
+  var bar=document.querySelector('.bar'), darks=[].slice.call(document.querySelectorAll('.skin,.close'));
+  function update(){
+    var dk=darks.some(function(d){var r=d.getBoundingClientRect();return r.top<=40&&r.bottom>40;});
+    bar.classList.toggle('is-dark',dk);
+    var cl=document.querySelector('.close').getBoundingClientRect();
+    document.body.classList.toggle('at-close',cl.top<innerHeight*0.6);
+    var mid=innerHeight*0.45, on=-1;
+    secs.forEach(function(s,i){if(!s)return;var r=s.getBoundingClientRect();if(r.top<=mid&&r.bottom>mid)on=i;});
+    if(on===cur) return; cur=on;
+    links.forEach(function(a,i){a.classList.toggle('is-on',i===on);});
+    if(on<0){ind.style.opacity=0;return;}
+    var a=links[on];
+    ind.style.width=a.offsetWidth+'px';
+    ind.style.transform='translateX('+a.offsetLeft+'px)';
+    ind.style.opacity=1;
+  }
+  addEventListener('scroll',update,{passive:true}); addEventListener('resize',function(){cur=-2;update();}); update();
+})();
+</script>
+</body>
+</html>
